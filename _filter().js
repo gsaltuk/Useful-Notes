@@ -16,7 +16,7 @@ const animals = [
     { name: "Jimmy",    species: "fish" }
 ];
 
-// // if implementing a for loop would be:
+// if implementing a for loop would be:
 let dogs = [];
 for (let i = 0; i < animals.length; i++) {
     if (animals[i].species === "dog") {
