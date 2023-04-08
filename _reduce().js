@@ -15,14 +15,14 @@ const orders = [    // orders (array of objects)
     { amount: 400}, // order 2 (object)
     { amount: 100}, // order 3 (object)
     { amount: 325}, // order 4 (object)
-]
+];
+
+let totalAmount = "The total is: " + orders.reduce((sum, order) => sum + order.amount, 0);
 
 // let totalAmount = "The total is: " + orders.reduce(function (sum, order) {
 //     console.log("The sum is now: ", sum, order);
 //     return sum + order.amount;
 // }, 0);
-
-let totalAmount = "The total is: " + orders.reduce((sum, order) => sum + order.amount, 0);
 
 // let totalAmount = [];
 // for (let i = 0; i < orders.lengt; i++) {
