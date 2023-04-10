@@ -21,12 +21,12 @@ console.log(names);
 
 // using MAP array method:
 const names2 = animals.map(function(animal) {
-    return animal.name + "is a " + animal.species;
+    return animal.name + " is a " + animal.species;
 });
 console.log(names2);
 
 // shorter version:
-const names3 = animals.map(animal => animal.name + "is a " + animal.species);
+const names3 = animals.map(animal => animal.name + " is a " + animal.species);
 console.log(names3);
 
 

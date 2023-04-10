@@ -12,7 +12,7 @@ function greetMe() {                        // 1
     //console.log("Hello, " + me + "!");
 }
 
-me = "Mauro";                               //2
+me = "Mauro";                               // 2
 
 greetMe();
 
@@ -39,10 +39,10 @@ function makeFunc() {           // 3.
       console.log(name);        // 7.
     }
     return displayName;         // 0.    4.5. can't display the name because it has been declared already.3.5.
-  }
+}
                                   
-  const myFunc = makeFunc();    // 1.    
-  myFunc();                     // 2.    5.      
+const myFunc = makeFunc();      // 1.    2.5.
+myFunc();                       // 2.    5.      
 /*
 0.  the displayName() inner function is returned from the outer function before being executed.
 
@@ -51,7 +51,7 @@ Steps:
 1.  makeFunc() is declared, which defines a parent function that contains an inner 
     function displayName().
 2.  myFunc() is called, which invokes makeFunc() and assigns the returned displayName() 
-    function to the variable myFunc.
+    function to the variable myFunc, which is undefined at the moment.2.5.
 3.  makeFunc() executes and defines a constant variable name with the value "Alessandro" 
     in its scope.3.5.
 4.  makeFunc() returns the displayName() function, but does not immediately execute it.4.5.
@@ -74,9 +74,9 @@ the variable name remains available for use, and "Alessandro" is passed to conso
 
 */
 function makeAdder(x) {
-return function (y) {
-    return x + y;
-};
+    return function (y) {
+        return x + y;
+    }
 }
 
 const add5 = makeAdder(5);
