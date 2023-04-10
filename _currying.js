@@ -10,15 +10,15 @@ let dragon = (name ,size, element) =>
 
 console.log(dragon("Cookie", "giant", "fire"));
 
-// //curryied version:
-function dragon2(name) {
+// curryied version:
+function dragonTwo(name) {
     return function(size) {
         return function(element) {
-            return `${name} is a ${size} dragon that breathes ${element} !`;
+            return `${name} is a ${size} dragon that breathes ${element}!`;
         }
     }
 }
 
-console.log(dragon2("Cookie")("giant")("fire"));
+console.log(dragonTwo("Cookie")("giant")("fire"));
 
 
