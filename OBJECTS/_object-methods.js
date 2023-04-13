@@ -1,4 +1,4 @@
-// uncomment sections to use node to see results \\
+// uncomment sections ot console.logs to use node to see results \\
 
 /* 1_ adding a method in a class is like creating a regular function, except there's no need to
 type the "function" keyword.
@@ -53,7 +53,7 @@ class Inventory {
 }
 
 const bag = new Inventory(0)
-//keep adding to the size by repetedly calling the class "bag" with new values
+//keep adding to the size by repetedly calling the object "bag" with new values
 bag.increase(420);
 bag.increase(69);
 console.log(bag);
